@@ -1,5 +1,6 @@
-from prompts import mcp    
-def main():
+from prompts import mcp
+
+def main() -> None:
     mcp.run()
 
 

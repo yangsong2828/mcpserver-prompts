@@ -7,3 +7,14 @@ requires-python = ">=3.10"
 dependencies = [
     "mcp[cli]>=1.23.1",
 ]
+
+[project.scripts]
+mcp-server = "prompts.__main__:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["prompts"]
+package-dir = {"prompts" = "src"}
